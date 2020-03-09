@@ -7,7 +7,7 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 import singleSpaAngular from 'single-spa-angular';
 import { singleSpaPropsSubject } from './single-spa/single-spa-props';
-
+import 'hammerjs';
 if (environment.production) {
   enableProdMode();
 }
