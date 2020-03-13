@@ -33,6 +33,7 @@ export class PrimaryNavComponent implements OnInit, OnDestroy {
   constructor( public router: Router,
                changeDetectorRef: ChangeDetectorRef,
                media: MediaMatcher) {
+    this.green = true;
     this.mobileQuery = media.matchMedia('(min-width: 768px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);

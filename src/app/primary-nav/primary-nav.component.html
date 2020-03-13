@@ -16,17 +16,20 @@
         <b>
           <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
           <!-- Dark Logo icon -->
-          <img [src]="'images/logo-icon.png' | assetUrl" alt="homepage" class="dark-logo">
+          <!--<img [src]="'images/logo-icon.png' | assetUrl" alt="homepage" class="dark-logo">-->
           <!-- Light Logo icon -->
-          <img [src]="'images/logo-light-icon.png' | assetUrl" alt="homepage" class="light-logo">
+          <!--<img [src]="'images/logo-light-icon.png' | assetUrl" alt="homepage" class="light-logo">-->
         </b>
         <!--End Logo icon -->
         <!-- Logo text -->
         <span fxShow="false" fxShow.gt-xs>
           <!-- dark Logo text -->
+          <img alt="mandariPanga" src="https://www.mandaripanga.com/wp-content/uploads/2017/06/logotipo-mandari-panga-2.png" width="100px">
+<!--
           <img [src]="'images/logo-text.png' | assetUrl" alt="homepage" class="dark-logo">
+-->
           <!-- Light Logo text -->
-          <img [src]="'images/logo-light-text.png' | assetUrl " class="light-logo" alt="homepage">
+          <!--<img [src]="'images/logo-light-text.png' | assetUrl " class="light-logo" alt="homepage">-->
         </span>
       </a>
     </div>
@@ -39,26 +42,16 @@
     <!-- ============================================================== -->
     <!-- Search - style you can find in header.scss -->
     <!-- ============================================================== -->
-    <button mat-icon-button class="srh-btn" (click)="showSearch = !showSearch">
-      <mat-icon>search</mat-icon>
-    </button>
-    <form class="app-search" [ngClass]="{'show-search': showSearch}">
-      <input type="text" class="form-control" placeholder="Search &amp; enter">
-      <a class="cl-srh-btn" (click)="showSearch = !showSearch">
-        <i class="ti-close"></i>
-      </a>
-    </form>
+<!--    <button mat-icon-button class="srh-btn" (click)="showSearch = !showSearch">-->
+<!--      <mat-icon>search</mat-icon>-->
+<!--    </button>-->
+<!--    <form class="app-search" [ngClass]="{'show-search': showSearch}">-->
+<!--      <input type="text" class="form-control" placeholder="Search &amp; enter">-->
+<!--      <a class="cl-srh-btn" (click)="showSearch = !showSearch">-->
+<!--        <i class="ti-close"></i>-->
+<!--      </a>-->
+<!--    </form>-->
     <span fxFlex></span>
-    <!-- ============================================================== -->
-    <!-- app header component - style you can find in header.scss / header.component.ts-->
-    <!-- ============================================================== -->
-    data header
-    <!-- ============================================================== -->
-    <!-- Right sidebar toggle - style you can find in rightsidebar.component.scss -->
-    <!-- ============================================================== -->
-    <button (click)="end.toggle()" mat-icon-button class="ml-xs overflow-visible">
-      <mat-icon>settingsc</mat-icon>
-    </button>
   </mat-toolbar>
   <!-- ============================================================== -->
   <!-- End Topbar - style you can find in pages.scss -->
@@ -79,17 +72,14 @@
 <!--               [opened]="mobileQuery.matches" [disableClose]="mobileQuery.matches" (open)="sidebarOpened = true"-->
 <!--               (close)="sidebarOpened = false" [perfectScrollbar]="config">-->
 
-<!--    <app-sidebar class="app-sidebar"></app-sidebar>-->
+<!--  &lt;!&ndash;  <app-sidebar class="app-sidebar"></app-sidebar>&ndash;&gt;-->
 
 <!--  </mat-sidenav>-->
-
-
 <!--  <mat-sidenav-content class="page-wrapper" [ngClass]="status ? 'minitoggle' : ''">-->
 
-<!--    <app-breadcrumb></app-breadcrumb>-->
+<!--    &lt;!&ndash;<app-breadcrumb></app-breadcrumb>&ndash;&gt;-->
 <!--    <div class="page-content">-->
 <!--     helloo world-->
-
 <!--    </div>-->
 
 <!--  </mat-sidenav-content>-->

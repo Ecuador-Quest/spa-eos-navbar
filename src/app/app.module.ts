@@ -14,6 +14,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import { AssetUrlPipe } from './pipes/asset-url.pipe';
+import {MatSidenavModule} from '@angular/material/sidenav';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,9 @@ import { AssetUrlPipe } from './pipes/asset-url.pipe';
     MatSliderModule,
     MatDatepickerModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSidenavModule,
+    PerfectScrollbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
